@@ -25,7 +25,7 @@ from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 route = DefaultRouter()
 route.register("brand", BrandsView)
 route.register("category", CategoryView)
-route.register("product", ProductView)
+route.register("product", ProductView, basename="product")
 
 
 urlpatterns = [
